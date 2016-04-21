@@ -3,11 +3,10 @@ body, div {
     padding: 0;
 }
 
-body {
-    background-image: url('images/background.jpg');
+html {
+    background-image: url('images/background.jpg') no-repeat center center fixed;
     background-size: cover;
 }
-
 
 header .row {
     background-color: white;
@@ -15,12 +14,44 @@ header .row {
     width: 100%;
 }
 
-img {
-    padding: 23px 0 23px 15px;
+.mobile_header img {
+    padding-top: 23px;
 }
 
+.desktop_header {
+    font-size: 12px;
+}
+
+.desktop_header {
+    padding: 5px 0 5px 0px;
+}
+
+section {
+    padding: 0 15px 0 15px;
+}
+
+section > p {
+    color: white;
+    font-size: 0.85em;
+}
+
+section > p:nth-child(1) {
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+section > p:nth-child(2) {
+    color: rgb(192, 190, 187);
+}
+
+
+p, a, span {
+    font-family: 'Roboto', sans-serif;
+}
+
+
 fieldset {
-    width: 88%;
+    /*width: 88%;*/
     background-color: white;
     border:0;
     margin: 40px auto;
@@ -54,20 +85,17 @@ fieldset div {
 }
 
 #login {
-    font-family: 'Roboto', sans-serif;
     font-size: 18px;
-    margin: 9px 0px 16px 12px;
+    margin: 9px 0px 26px 12px;
 }
 
 #forgot_psw {
     float:right;
-    color: black;
-    font-family: 'Roboto', sans-serif;
+    color: grey;
     font-size: 11px;
 }
 
 #terms_use {
-    font-family: 'Roboto', sans-serif;
     font-size: 10px;
     text-align: center;
     line-height: 18px;
@@ -76,6 +104,11 @@ fieldset div {
 }
 
 #terms_use a {
+    color: red;
+    text-decoration: none;
+}
+
+#logout_button {
     color: red;
     text-decoration: none;
 }
@@ -101,4 +134,28 @@ fieldset div {
 
 .button:hover {
     color: red;
+}
+
+.mobile_header {
+    display: none;
+}
+
+.align-right {
+    float:right;
+}
+
+.desktop_header > div:nth-child(2) {
+    padding-top: 15px;
+}
+
+@media screen and (max-width: 767px) { 
+    body > section:first-of-type {
+        display: none;
+    }
+    .desktop_header {
+        display: none;
+    }
+    .mobile_header {
+        display: block;
+    }
 }

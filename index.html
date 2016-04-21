@@ -11,30 +11,46 @@
 <body style="background-image: url('images/background.jpg')">
     <header>
         <div class="row">
-            <div class="col col-xs-5">
-                <a href="#"><img src="images/logo.png" alt="List Pictures" width="160" height="34" ></a>
+            <div class="mobile_header col col-xs-5">
+                <a href="#"><img src="images/logo.png" alt="List Pictures" width="160" height="34"></a>
+            </div>
+            <div class="desktop_header col-sm-6 h_center">
+                <div class="col col-sm-3">
+                    <a href="#"><img src="images/logo_desktop.jpg" width="64" height="64" alt="List Pictures"></a>
+                </div>
+                <div class="align-right col-sm-2">
+                    <span class="align-right">Welcome <b>John,</b></span></br>
+                    <a id="logout_button" class="align-right" href="#">&larr; <u>Logout</u></a>
+                </div>
             </div>
         </div>
+
     </header>
-    <section class="row">
-        <form class="h_center col-xs-12 col-sm-4">
+    <section class="row h_center col-sm-6 col-md-4 col-lg-3">
+        <p>Walgreens</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nisi neque, bibendum et pharetra ac, ultricies vel metus. Aenean vitae bibendum urna. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur
+            sit amet scelerisque ipsum. Sed nulla velit, ultricies sit amet arcu vitae, efficitur rutrum mi. Quisque tempor posuere diam, et ornare velit pharetra et. Mauris ac ante neque. </p>
+    </section>
+    <section class="row h_center col-xs-12 col-sm-6 col-md-4 col-lg-3">
+        <form>
             <fieldset>
                 <p id="login">Login</p>
                 <div>
-                <input type="text" class="register_input" required placeholder="username" pattern="[A-Za-z]+" />
-                <br>
-                <input type="password" class="register_input" required placeholder="password" />
-                <a id="forgot_psw" href="#"><p>forgot password?</p></a>
-                <br>
-                <br>
-                <a class="button" href="#">Sign In</a>
-                <a class="button" href="#">Create Membership</a>
-                <p id="terms_use">By clicking the 'Get Started', you agree to the RunKeeper <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a></p>
+                    <input type="text" class="register_input" required placeholder="username" pattern="[A-Za-z]+" />
+                    <br>
+                    <input type="password" class="register_input" required placeholder="password" />
+                    <a id="forgot_psw" href="#">
+                        <p>forgot password?</p>
+                    </a>
+                    <br>
+                    <br>
+                    <a class="button" href="#">Sign In</a>
+                    <a class="button" href="#">Create Membership</a>
+                    <p id="terms_use">By clicking the 'Get Started', you agree to the RunKeeper <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a></p>
                 </div>
             </fieldset>
         </form>
     </section>
-
 </body>
 
 </html>
